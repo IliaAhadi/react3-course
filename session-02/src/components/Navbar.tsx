@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Container from "./Container";
 import { LuShoppingCart, LuUser } from "react-icons/lu";
+import { FcShop } from "react-icons/fc";
 
 // session 2
 const navItems = [
@@ -17,14 +18,14 @@ const btns = [
 
 export default function Navbar() {
   return (
-    <div className="w-full h-20 grid items-center">
+    <div className="w-full">
       <Container>
-        <div className="grid grid-cols-3 items-center">
+        <div className="flex justify-between items-center">
           <div className="flex items-center justify-center w-24">
-            <img src="/logo.png" alt="Logo" />
+            <FcShop className="my-4" size={60} />
           </div>
 
-          <ul className="flex items-center justify-center gap-15">
+          <ul className="flex gap-15">
             {navItems.map((nav) => (
               <li
                 className="text-xl text-orange-400 text-shadow-sm text-shadow-orange-500 font-semibold cursor-pointer transition duration-300 hover:text-orange-300"
