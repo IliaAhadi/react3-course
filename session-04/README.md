@@ -1,0 +1,3 @@
+- Implement OurProducts on Home
+- OurProducts has Product component
+- Implement Spinner component and added to ProductList
