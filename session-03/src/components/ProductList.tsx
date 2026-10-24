@@ -26,6 +26,7 @@ export default function ProductList() {
         );
 
         setProducts(filteredProducts);
+        setError("");
       } catch (err) {
         setError((err as Error).message);
         console.log((err as Error).message);
