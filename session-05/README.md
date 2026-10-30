@@ -1,0 +1,2 @@
+- Implement Slider with swiper
+- Implement env.d.ts
