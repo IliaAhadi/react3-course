@@ -36,7 +36,7 @@ export default function OurProducts() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col gap-15">
       {loading && <Spinner size={40} />}
       {error && <p>{error}.</p>}
       {products.length > 0 && (
@@ -45,14 +45,14 @@ export default function OurProducts() {
             {visibleProducts.map((product) => (
               <Product product={product} key={product.id} />
             ))}
-
-            <button
-              className="text-orange-400 font-medium border border-orange-400 py-3 px-15 cursor-pointer transition duration-300 hover:bg-orange-400 hover:text-white"
-              onClick={() => setShowAll((prev) => !prev)}
-            >
-              {showAll ? "Show less" : "Show more"}
-            </button>
           </div>
+
+          <button
+            className="text-orange-400 font-medium border border-orange-400 py-3 px-15 cursor-pointer transition duration-300 hover:bg-orange-400 hover:text-white"
+            onClick={() => setShowAll((prev) => !prev)}
+          >
+            {showAll ? "Show less" : "Show more"}
+          </button>
         </>
       )}
     </div>
