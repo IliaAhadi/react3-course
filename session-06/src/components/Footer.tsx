@@ -45,7 +45,10 @@ export default function Footer() {
 
             <ul className="flex flex-col gap-10 text-gray-500">
               {navs.map((nav) => (
-                <li className="cursor-pointer transition duration-300 hover:text-orange-400 ">
+                <li
+                  className="cursor-pointer transition duration-300 hover:text-orange-400"
+                  key={nav.name}
+                >
                   <Link to={nav.link}>{nav.name}</Link>
                 </li>
               ))}
@@ -55,7 +58,10 @@ export default function Footer() {
             <h3 className="mb-12">Help</h3>
             <ul className="flex flex-col gap-10 text-gray-500">
               {help.map((item) => (
-                <li className="cursor-pointer transition duration-300 hover:text-orange-400 ">
+                <li
+                  className="cursor-pointer transition duration-300 hover:text-orange-400"
+                  key={item.name}
+                >
                   {item.name}
                 </li>
               ))}
