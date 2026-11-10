@@ -47,7 +47,7 @@ export default function BlogPage() {
 
   return (
     <div>
-      <Banner title={blogItem?.title} />
+      <Banner title={blogItem?.title || ""} />
 
       <Container>
         <div className="flex flex-col justify-center mx-auto mt-25 mb-15 gap-12">
