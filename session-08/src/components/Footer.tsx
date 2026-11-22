@@ -1,23 +1,9 @@
 import { Link } from "react-router";
 import Container from "./Container";
 import { FcShop } from "react-icons/fc";
+import { navItems } from "./Navbar";
 
 // session 6
-const navs = [
-  {
-    name: "Home",
-    link: "/",
-  },
-  {
-    name: "Shop",
-    link: "/shop",
-  },
-  {
-    name: "Blogs",
-    link: "/blogs",
-  },
-  { name: "Contact", link: "/contact" },
-];
 const help = [
   { name: "Payment option" },
   { name: "Returns" },
@@ -44,7 +30,7 @@ export default function Footer() {
             <h3 className="mb-12">Links</h3>
 
             <ul className="flex flex-col gap-10 text-gray-500">
-              {navs.map((nav) => (
+              {navItems.map((nav) => (
                 <li
                   className="cursor-pointer transition duration-300 hover:text-orange-400"
                   key={nav.link}
@@ -72,7 +58,8 @@ export default function Footer() {
             <div className="flex gap-5">
               <input
                 type="text"
-                className="border-b border-b-gray-300 py-1 outline-none focus:border-b-orange-400 placeholder:Enter your email..."
+                className="border-b border-b-gray-300 py-1 outline-none focus:border-b-orange-400"
+                placeholder="Enter your email..."
               />
               <button className="border-b border-b-gray-300 cursor-pointer text-sm font-medium text-gray-500 hover:text-orange-400 transition duration-300">
                 SUBSCRIBE

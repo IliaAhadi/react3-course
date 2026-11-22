@@ -4,7 +4,7 @@ import { LuShoppingCart, LuUser } from "react-icons/lu";
 import { FcShop } from "react-icons/fc";
 
 // session 2
-const navItems = [
+export const navItems = [
   { title: "Home", link: "/" },
   { title: "Shop", link: "/shop" },
   { title: "Blog", link: "/blog" },
