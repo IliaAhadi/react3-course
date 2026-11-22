@@ -1,1 +1,2 @@
-- Implement Contact page
+- Implement Blog page for a blog
+- files: BlogPage.tsx, App.tsx
