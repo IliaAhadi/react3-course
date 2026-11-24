@@ -36,7 +36,7 @@ export default function Footer() {
                   className="cursor-pointer transition duration-300 hover:text-orange-400"
                   key={nav.link}
                 >
-                  <Link to={nav.link}>{nav.name}</Link>
+                  <Link to={nav.link}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
         <hr className="border-gray-300 mt-15" />
         <p className="font-medium my-10">
-          {new Date().getFullYear()} My Shop &copy;All right revered
+          {new Date().getFullYear()} My Shop &copy;All rights revered
         </p>
       </Container>
     </div>

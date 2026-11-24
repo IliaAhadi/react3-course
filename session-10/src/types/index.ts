@@ -22,3 +22,12 @@ export interface IPost {
   tags: string[];
 }
 // end of session 8
+
+// session 10
+export interface IUser {
+  id: number;
+  firstName: string;
+  username: string;
+  password: string;
+}
+// end of session 10

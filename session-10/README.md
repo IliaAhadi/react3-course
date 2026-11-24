@@ -1,1 +1,3 @@
-- Implement Contact page
+- Implement Auth Page
+- Auth.tsx
+- types/index.ts
